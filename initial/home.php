@@ -101,7 +101,7 @@ display: inline-block;
             </ul>
         </div>
     </div>
-    <img src="images/maxresdefault.jpg" alt="Girl in a jacket" style="width:100%;height:500px;"> 
+    <img src="../images/maxresdefault.jpg" alt="Girl in a jacket" style="width:100%;height:500px;"> 
  <div class="container">
     <div class="row">
       <div class="col-md-12">

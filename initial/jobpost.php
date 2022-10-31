@@ -29,14 +29,14 @@ if($rs)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/create_.css"/>
+    <link rel="stylesheet" href="../styles/create_.css"/>
     <title>Create a job post</title>
 </head>
 <body>
     <div class="container">
         <div class="content">
           <div class="left-side">
-             <a href="/home" width="40" height=5><img src="images/index.png" style="
+             <a href="/Online-Job-portal-PHP/initial/home.php" width="40" height=5><img src="../images/index.png" style="
                 width:300px;
                 height:300px"></a>  
           </div>

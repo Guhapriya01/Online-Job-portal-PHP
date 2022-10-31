@@ -1,30 +1,20 @@
-<?php include("partials/menu.php") ;
-session_start();
-
-if(isset($_POST['submit'])){
+<?php
+if(isset($_POST['username'])){
   $con = mysqli_connect('localhost', 'root', '','JobPortal');
   $username=$_POST['username'];
   $password=$_POST['password'];
-  $selected_val = $_POST['tpType'];
-
   $email=$_POST['email'];
-  $sql1 = "INSERT INTO `login` (`username`, `password`, `email`) VALUES ('$username', '$password', '$email')";
+  $sql1 = "INSERT INTO `login` ( `username`, `password`, `email`) VALUES ('$username', '$password', '$email')";
   $rs1 = mysqli_query($con, $sql1); 
   if($rs1)
   {
-      $sql = "SELECT * from `login` where `username` = '$username' and `password` = '$password'";  
-      $res = mysqli_query($con, $sql);
-      if($res){
-        //echo "---";
-        $rws = mysqli_fetch_assoc($res);
-        $login = $rws['login_id'];
-
-        if($selected_val == 'jobseeker'){
-              header("Location: js.php?id=".$login);
-              //echo "Location: js.php?id=".$login;
-        }
-        else{
-            header("Location: company.php?id=".$login);
+      if(isset($_POST['submit'])){
+          $selected_val = $_POST['tpType'];
+          if($selected_val == 'jobseeker'){
+              header("Location: js.php");
+          }
+          else{
+            header("Location: company.php");
           }
       }
   }
@@ -36,20 +26,19 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles/create_.css">
+    <link rel="stylesheet" href="../styles/create_.css"/>
     <title>Create Account</title>
 </head>
 <body>
     <div class="container">
         <div class="content">
           <div class="left-side">
-            <a href="/home" width="40" height=5><img src="images/job.jpg" style="
+            <a href="/home" width="40" height=5><img src="../images/job.jpg" style="
                 width:300px;
                 height:300px"></a>  
           </div>
           <div class="right-side">
-            <div class="topic-text">Create Your Account</div>
-
+            <div class="topic-text">Update Profile Details</div>
           <form action="create.php" method="POST">
             <div class="input-box">
               <input type="text" name="username" placeholder="Enter username" required>

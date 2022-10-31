@@ -40,7 +40,7 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/create_.css"/>
+    <link rel="stylesheet" href="../styles/create_.css"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <title>Create Account</title>
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
     <div class="container">
         <div class="content">
           <div class="left-side">
-            <a href="/home" width="40" height=5><img src="images/job.jpg" style="
+            <a href="/Online-Job-portal-PHP/initial/home.php" width="40" height=5><img src="../images/job.jpg" style="
                 width:300px;
                 height:300px"></a>  
           </div>
