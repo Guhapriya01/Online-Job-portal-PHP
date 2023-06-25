@@ -106,24 +106,8 @@ a{
                 <div class="button">
                     <input type="submit" name="submit" value="Sign out" >
                     <a href="home.php">Back to home</a>
-                  </div>
-        </form>
-
+               </div>
+	</form>
     </div>
-    <script type="text/javascript">
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        2000 
-    )
-});
-
-
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
-    </script>
 </body>
 </html>
