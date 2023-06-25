@@ -23,17 +23,14 @@ if(isset($_POST['user']))
     $count = mysqli_num_rows($result);  
           
     if($count == 1){ 
-        echo "cc";  
+        //echo "cc";  
         $sql1 = "SELECT * from `login` where `username` = '$username' and `password` = '$password'";  
         $res = mysqli_query($con, $sql1);
       if($res){
-          echo "22";
         $rws = mysqli_fetch_assoc($res);
         $login = $rws['login_id'];
 
         if($tp == 'jobseeker'){
-            echo "00";
-
             $sql3 = "SELECT * from `jobseeker` where `login_id` = '$login'";  
             $res3 = mysqli_query($con, $sql3);
             if($res3){
@@ -82,10 +79,6 @@ if(isset($_POST['user']))
             <div class="overlay">
                 <h1>Dream Jobs</h1>
                 <p>Choose your jobs</p>
-            <span>
-                <p>Login with Other Resources</p>
-                <a href="#"> Login with Google</a>
-            </span>
             </div>
         </div>
         <div class="right">
