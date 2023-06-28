@@ -5,4 +5,4 @@ This portal aims to enable applicants to search for jobs in a convenient manner 
 <br>
 **LOOK AND FEEL**
 <br>
-![image](https://github.com/Guhapriya01/Online-Job-portal-PHP/assets/76595809/456b1a01-ca36-415a-8607-55796b4fb820)
+![hh](https://github.com/Guhapriya01/Online-Job-portal-PHP/assets/76595809/98b1e835-f88b-42ea-8e60-1d993c70e51c)
